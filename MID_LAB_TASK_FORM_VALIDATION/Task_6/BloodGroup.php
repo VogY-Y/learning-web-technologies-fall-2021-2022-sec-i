@@ -18,15 +18,22 @@ function test_input($data) {
 
     <p><span class="error">* required field</span></p>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        NAME <br><br>
-        <input type="text" name="name">
+        Blood Group <br><br>
+            <select name="">
+                <option value="">O+</option>
+                <option value="">A+</option>
+                <option value="">A-</option>
+                <option value="">O-</option>
+                <option value="">AB+</option>
+                <option value="">AB-</option>
+            </select>
         <span class="error">* <?php echo $nameError;?></span>
         <br><br>
         <input type="submit" name="submit" value="Submit">
     </form>
 
     <?php
-echo "<h1>Your name is</h1>";
+echo "<h1>Your BloodGroup</h1>";
 echo $name;
 
 ?>

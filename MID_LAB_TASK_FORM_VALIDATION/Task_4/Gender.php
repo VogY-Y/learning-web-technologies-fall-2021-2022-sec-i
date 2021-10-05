@@ -26,7 +26,7 @@ function test_input($data) {
     </form>
 
     <?php
-echo "<h1>Your Gender</h1>";
+echo "<h1>Your Gender is </h1>";
 echo $gender; 
 ?>
 </body>

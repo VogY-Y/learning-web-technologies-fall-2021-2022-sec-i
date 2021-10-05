@@ -32,7 +32,7 @@ function test_input($data) {
     </form>
 
     <?php
-echo "<h1>Your Input:</h1>";
+echo "<h1>Your email is</h1>";
 echo $email;
 ?>
 </body>
