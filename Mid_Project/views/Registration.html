@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<center>
+	<title>Registration Form </title>
+</head>
+<body background="../model/white.jpg" >
+	<font >    <h1>  REGISTRATION   FORM  </h1> </font>
+	<hr>
+	<br>
+
+	<form action="../controller/RegistrationAction.php"   method="POST">
+		<legend><h3>BASIC INFORMATION </h3></legend>
+
+		<label for="firstname"> <b>Enter Your First Name:</b></label>
+		<input type="text" name="firstname" id="firstname">
+
+		<br><br>
+
+		<label for="lastname"> <b>Enter Your Last Name:</b></label>
+		<input type="text" name="lastname" id="lastname">
+		
+		<br><br>
+
+		<label for="gender" > <b> Gender:</b></label>
+		<input type="radio" name="gender" id="male" value="male" required>
+		<label for="male"><font color=MidnightBlue<b>Male</b></font></label>
+
+		<input type="radio" name="gender" id="female" value="female">
+
+		<label for="female"><font color=MidnightBlue<b>Female</b></font></label>
+
+		<input type="radio" name="gender" id="others" value="others">
+
+		<label for="others"><font color=MidnightBlue<b>Others</b></font></label>
+		
+		<br><br>
+        
+        <label for="email"><b> Enter Your Email:</b></label>
+        <input type="email" id="email" name="email">
+		
+		<br><br>
+
+		<label for="Password"><b>Enter Your Password:</b></label>
+        <input type="Password" id="Password" name="Password" required>
+
+        <br><br>
+
+		<label for="Password"><b>Re Enter Your Password</b></label>
+        <input type="Password" id="Password" name="Password" required="Password">
+          
+		<br><br>
+
+		<label for="user"> <b>Username</b></label>
+		<input type="text" name="user" id="user" required="">
+		<br><br>
+
+        <button type="submit" class="registerbtn">Register</button>
+        <button onclick="window.location.href='CoverPage.html'" type="button">Cancel</button>
+
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
+</center>
+	</form>
+</body>
+</html>

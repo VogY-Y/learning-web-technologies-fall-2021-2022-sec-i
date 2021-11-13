@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title>Sign in </title>
+</head>
+<body background= "../model/white.jpg">
+
+<center>
+    <h1 style=" color:orangered;text-align:centre; font-size : 70px;">Login</h1>
+</center>>
+<form action="../controller/LoginAction.php" method="GET">
+      
+
+      <center>
+        
+          <font size = 5>
+          <label  for="user">Enter a username:</label>
+        <input style="color:orangered; font-size : 10px; width: 90px; height: 20px;" type="text"   name="user" id="user"  required>
+           <br><br>
+
+          <label for="password">Password:</label>
+        <input style="color: orangered; font-size : 8px; width: 90px; height: 20px;" type="password" id="password" name="password"  required>
+		<br><br>
+
+    
+        <br></b>
+        
+        <input style="font-family: 'Cooper Black'; color: orangered;  font-size : 15px; width: 90px; height: 30px;" type="submit" name ="submit" value="Login">
+        <input style="font-family: 'Cooper Black'; color: orangered; font-size : 15px; width: 90px; height: 30px;" onclick="window.location.href='CoverPage.html'" type="button" value="Back">
+        
+        <p>Not a user? <a href="Registration.html">Sign Up</a>.</p>
+        </font>
+
+        
+    </form>
+
+
+</body>
+</html>
