@@ -28,3 +28,37 @@ body{
 	color: red;
 
 }
+#output{
+text-align: right;
+height: 60px;
+margin: 10px 20px;
+font-size: 30px;
+}
+#keyboard{
+height: 400px;
+}
+.operator,.number,.empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.number,.empty{
+	background-color: ;
+}
+.number,.operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus,.number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(1){
+	background-color: red;
+}
