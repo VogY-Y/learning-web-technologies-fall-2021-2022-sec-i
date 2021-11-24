@@ -30,7 +30,14 @@ if(isset($_POST)){
             } else {
                 $out = $old.$num;
             }
-
+            //do other things like percentage
+            if($out<>'' and $num === '%' and !in_array($last, $operators)){
+                $out= eval("return ($old)/100;");
+            }
+            //do other things like square
+            if($out<>'' and $num === 'x2' and !in_array($last, $operators)){
+                $out= eval("return ($old*$old);");
+            }
         break;
         default: $out = $old;
     }
